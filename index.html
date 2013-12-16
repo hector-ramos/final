@@ -69,20 +69,74 @@
 
     var headerColor = ['red', 'blue', 'green'];
     var sectionLColor = ['green', 'yellow', 'red'];
-    var headerColor = ['yellow', 'green', 'blue'];
+    var sectionRColor = ['yellow', 'green', 'blue'];
 
+    var counter = 0;
 
     header.addEventListener('click', function(evt){
-            header.style.backgroundColor = "red";
+        counter++;
+
+        if (counter === 1){
+            header.style.backgroundColor = headerColor[0];
+        }
+        if (counter === 2){
+            header.style.backgroundColor = headerColor[1];
+        }
+        if (counter === 3){
+            header.style.backgroundColor = headerColor[2];
+        }
+
+        if (counter > 2){
+            counter = 0;
+        }
+        
     }, false);
 
     sectionL.addEventListener('click', function(evt){
-        sectionL.style.backgroundColor = 'green';
+        counter++;
+
+        if (counter === 1){
+            sectionL.style.backgroundColor = sectionLColor[0];
+        }
+        if (counter === 2){
+            sectionL.style.backgroundColor = sectionLColor[1];
+        }
+        if (counter === 3){
+            sectionL.style.backgroundColor = sectionLColor[2];
+        }
+
+        if (counter > 2){
+            counter = 0;
+        }
+        
     }, false);
 
     sectionR.addEventListener('click', function(evt){
-        sectionR.style.backgroundColor = 'yellow';
+        counter++;
+
+        if (counter === 1){
+            sectionR.style.backgroundColor = sectionRColor[0];
+        }
+        if (counter === 2){
+            sectionR.style.backgroundColor = sectionRColor[1];
+        }
+        if (counter === 3){
+            sectionR.style.backgroundColor = sectionRColor[2];
+        }
+
+        if (counter > 2){
+            counter = 0;
+        }
+        
     }, false);
+
+    // sectionL.addEventListener('click', function(evt){
+    //     sectionL.style.backgroundColor = 'green';
+    // }, false);
+
+    // sectionR.addEventListener('click', function(evt){
+    //     sectionR.style.backgroundColor = 'yellow';
+    // }, false);
 
 
     </script>
