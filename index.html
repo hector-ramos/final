@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+</head>
+<body>
+    <script>
+    var doc = document;
+    var body = document.body;
+
+    var header = doc.createElement('header');
+    var sectionL = doc.createElement('section');
+    var sectionR = doc.createElement('section');
+    var footer = doc.createElement('footer');
+    var headerH3 = doc.createElement('h3');
+    var sectionLH3 = doc.createElement('h3');
+    var sectionRH3 = doc.createElement('h3');
+    var footerH3 = doc.createElement('h3');
+
+
+    body.appendChild(header);
+    body.appendChild(sectionL);
+    body.appendChild(sectionR);
+    body.appendChild(footer);
+
+    header.appendChild(headerH3);
+    headerH3.textContent = "Header";
+    headerH3.style.textAlign = 'center';
+    headerH3.style.marginTop = '0';
+
+
+    sectionL.appendChild(sectionLH3);
+    sectionLH3.textContent = "Left";
+    sectionLH3.style.textAlign = 'center';
+
+    sectionR.appendChild(sectionRH3);
+    sectionRH3.textContent = "Right";
+    sectionRH3.style.textAlign = 'center';
+
+    footer.appendChild(footerH3);
+    footerH3.textContent = "Footer";
+    footerH3.style.textAlign = 'center';
+    footer.style.border = "solid 1px #000";
+
+
+
+
+
+
+    //styling 
+    body.style.width = '900px';
+    body.style.margin = 'auto';
+    body.style.height = '600px';
+    body.style.marginTop = '5px';
+
+    header.style.width = '900px';
+    header.style.height = '150px';
+
+
+    sectionL.style.width = '30%';
+    sectionL.style.display = 'inline-block';
+    sectionL.style.height = '450px';
+
+    sectionR.style.width = '70%';
+    sectionR.style.display = 'inline-block';
+    sectionR.style.height = '450px';
+
+
+    var headerColor = ['red', 'blue', 'green'];
+    var sectionLColor = ['green', 'yellow', 'red'];
+    var headerColor = ['yellow', 'green', 'blue'];
+
+
+    header.addEventListener('click', function(evt){
+            header.style.backgroundColor = "red";
+    }, false);
+
+    sectionL.addEventListener('click', function(evt){
+        sectionL.style.backgroundColor = 'green';
+    }, false);
+
+    sectionR.addEventListener('click', function(evt){
+        sectionR.style.backgroundColor = 'yellow';
+    }, false);
+
+
+    </script>
+</body>
+</html>
